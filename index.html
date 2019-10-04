@@ -9,7 +9,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Synthetica HTML5/CSS3 Template</title>
+	<title>VRMove</title>
 	<meta name="description" content="A free html template with Sketch design made with Bootstrap">
 	<meta name="keywords" content="free html template, bootstrap, ui kit, sass" />
 	<meta name="author" content="Codrops" />
@@ -58,16 +58,15 @@
 				<div class="primary-nav-wrapper">
 					<nav>
 						<ul class="primary-nav">
-							<li><a href="#intro">The collective</a></li>
-							<li><a href="#team">The crew</a></li>
-							<li><a href="#articles">Articles</a></li>
-							<li><a href="#freebies">Freebies</a></li>
+							<li><a href="#intro">Introduction</a></li>
+							<li><a href="#team">The Experiment</a></li>
+							<li><a href="#articles">Results and Conclusions</a></li>
+							<li><a href="#freebies">The Team</a></li>
 						</ul>
 					</nav>
 					<div class="secondary-nav-wrapper">
 						<ul class="secondary-nav">
-							<li class="subscribe"><a href="#get-started">Subscribe</a></li>
-							<li class="search"><a href="#search" class="show-search"><i class="fa fa-search"></i></a></li>
+							<li class="subscribe"><a href="https://github.com/mikhailamod/VRSickness">Github</a></li>
 						</ul>
 					</div>
 					<div class="search-wrapper">
@@ -89,7 +88,7 @@
 	</div>
 	<header class="hero">
 		<div class="carousel js-flickity">
-			<div class="carousel-cell" style="background-image: url(img/hero-bg-01.jpg);">
+			<div class="carousel-cell" style="background-image: url(img/vr_wallpaper.jpg);">
 				<div class="hero-bg">
 					<div class="container">
 						<div class="row">
@@ -101,40 +100,6 @@
 						<div class="row">
 							<div class="col-md-8 col-md-offset-2 hero-intro-text wp3">
 								<p>The use of <span class="bold italic">haptic feedback</span> for the reduction of simulator sickness. </p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="carousel-cell" style="background-image: url(img/hero-bg-02.jpg);">
-				<div class="hero-bg">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12 text-center">
-								<h1 class="wp1">Get a head start, with the Synthetica Sketch file.</h1>
-								<a href="http://tympanus.net/codrops/?p=26570" class="btn primary wp2">Download Sketch File</a>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-8 col-md-offset-2 hero-intro-text wp3">
-								<p>Create your landing page in minutes with Synthetica's Sketch style guide.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="carousel-cell" style="background-image: url(img/hero-bg-03.jpg);">
-				<div class="hero-bg">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12 text-center">
-								<h1 class="wp1">Download Synthetica today, it's free forever.</h1>
-								<a href="http://tympanus.net/codrops/?p=26570" class="btn primary wp2">Download Template</a>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-8 col-md-offset-2 hero-intro-text wp3">
-								<p>Available exclusively from Codrops.</p>
 							</div>
 						</div>
 					</div>
@@ -154,25 +119,139 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3">
-					<h4>The problem</h4>
+					<h4>Introduction</h4>
 				</div>
 				<div class="col-md-9">
-					<p>VR has seen a surge in popularity in recent years, yet the same simulator sickness that has plagued VR since its inception, remains a problem today. A major contributing factor behind simulator sickness is vection - vection is best descrived as a feeling of self motion. We aim to reduce vection by the use of haptic feedback.</p>
-					<div class="video-player">
-						<video id="video_synth" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" width="568" height="300" poster="img/video-cover.jpg" data-setup='{}'>
-							<source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4" />
-							<source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm" />
-							<source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg" />
-							<p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
-						</video>
-					</div>
-					<p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust fund hella. Kinfolk gluten-free lo-fi quinoa. </p>
-					<p>Pabst kitsch ennui hoodie meggings banjo. Schlitz tacos kitsch godard before they sold out. Kale chips chillwave kickstarter photo booth cronut cold-pressed. Banjo fixie umami kombucha affogato gluten-free authentic slow-carb hashtag, hammock pour-over chambray viral VHS normcore.</p>
+					<p>VR has seen a surge in popularity in recent years, yet the same simulator sickness that has plagued VR since its inception,
+						remains a problem today. Simulator sickness is a form of motion sickness experienced in simulators and VR. Symptoms of
+						simulator sickness, similar to that of motion sickness but less severe, include: nausea, headache, blurred
+						vision, and eye-strain  A major contributing factor behind simulator sickness is vection - vection is best described
+						as a feeling of self motion. We aim to reduce vection by the use of haptic feedback via the design
+						and implementation of two systems, a stepper and a tether, which will be compared to traditional controller-based movement.
+					</p>
+						
+					<p> The stepper is a walking-in-place form of locomotion, and builds upon existing research. The second is a tether device
+						which is a combination of walking-in-place and gesture-based control and is, to the best of our knowledge, an unexplored method.
+						Both these systems aim to reduce simulator sickness by providing additional sensory information in the form of haptic feedback.
+					</p>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- END SECTION: Intro -->
+	<section class="freebies has-padding">
+			<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6 no-padding">
+							<article class="item wp5">
+								<figure class="has-overlay">
+									<figcaption class="overlay">
+										<div class="like-share-wrapper">
+											<ul>
+												<li>
+													<div class="like-button-wrapper">
+														<a href="#" class="like_button"><i class="like-counter fa fa-heart-o"></i></a>
+														<span class="count">0</span>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="freebie-content">
+											<span class="date">03/01/2016</span>
+											<h2>Sedna HTML CSS Template</h2>
+											<div class="group">
+												<a href="http://tympanus.net/codrops/2015/08/11/freebie-sedna-one-page-website-template/" class="btn secondary">Download</a>
+											</div>
+										</div>
+									</figcaption>
+									<img src="img/sedna-freebie.jpg" alt="Sedna Freebie">
+								</figure>
+							</article>
+						</div>
+						<div class="col-md-6 no-padding">
+							<article class="item wp6">
+								<figure class="has-overlay">
+									<figcaption class="overlay">
+										<div class="like-share-wrapper">
+											<ul>
+												<li>
+													<div class="like-button-wrapper">
+														<a href="#" class="like_button"><i class="like-counter fa fa-heart-o"></i></a>
+														<span class="count">0</span>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="freebie-content">
+											<span class="date">03/01/2016</span>
+											<h2>Land.io Sketch Template</h2>
+											<div class="group">
+												<a href="http://tympanus.net/codrops/2015/09/16/freebie-land-io-ui-kit-landing-page-design-sketch/" class="btn secondary">Download</a>
+											</div>
+										</div>
+									</figcaption>
+									<img src="img/landio-freebie.jpg" alt="Land.io Freebie">
+								</figure>
+							</article>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 no-padding">
+							<article class="item wp7">
+								<figure class="has-overlay">
+									<figcaption class="overlay">
+										<div class="like-share-wrapper">
+											<ul>
+												<li>
+													<div class="like-button-wrapper">
+														<a href="#" class="like_button"><i class="like-counter fa fa-heart-o"></i></a>
+														<span class="count">0</span>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="freebie-content">
+											<span class="date">03/01/2016</span>
+											<h2>Synthetica HTML5/CSS3 Template</h2>
+											<div class="group">
+												<a href="http://tympanus.net/codrops/?p=26570" class="btn secondary">Download</a>
+											</div>
+										</div>
+									</figcaption>
+									<img src="img/freebie-03.jpg" alt="Synthetica Freebie">
+								</figure>
+							</article>
+						</div>
+						<div class="col-md-6 no-padding">
+							<article class="item wp8">
+								<figure class="has-overlay">
+									<figcaption class="overlay">
+										<div class="like-share-wrapper">
+											<ul>
+												<li>
+													<div class="like-button-wrapper">
+														<a href="#" class="like_button"><i class="like-counter fa fa-heart-o"></i></a>
+														<span class="count">0</span>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="freebie-content">
+											<span class="date">03/01/2016</span>
+											<h2>Free logo concepts by Koby West</h2>
+											<div class="group">
+												<a href="#" class="btn secondary">Download</a>
+											</div>
+										</div>
+									</figcaption>
+									<img src="img/freebie-04.jpg" alt="Synthetica">
+								</figure>
+							</article>
+						</div>
+					</div>
+				</div>
+	</section>
+	
 	<!-- SECTION: Crew -->
 	<section class="crew has-padding alternate-bg" id="team">
 		<div class="container">
