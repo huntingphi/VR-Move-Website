@@ -52,16 +52,14 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="header-nav-wrapper">
-				<div class="logo">
-					<a href="/index.html"><img src="img/synthetica-logo.png" alt="Synthetica Freebie"></a>
-				</div>
 				<div class="primary-nav-wrapper">
 					<nav>
 						<ul class="primary-nav">
 							<li><a href="#intro">Introduction</a></li>
 							<li><a href="#experiment">The Experiment</a></li>
-							<li><a href="#articles">Results and Conclusions</a></li>
-							<li><a href="#freebies">The Team</a></li>
+							<li><a href="#results">Results</a></li>
+							<li><a href="#conclusion">Conclusions</a></li>
+							<li><a href="#team">The Team</a></li>
 						</ul>
 					</nav>
 					<div class="secondary-nav-wrapper">
@@ -201,18 +199,177 @@
 	</section>
 
 	<section class="collective has-padding" id="experiment">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<h4>The Experiment</h4>
+				</div>
+				<div class="col-md-9">
+					<p>
+							During the experiment the user walks through a custom-made environment. The environment was developed using the Unity game engine.
+							The environment is intended to increase the likelihood of one experiencing simulator sickness, and needs to be monodirectional
+							(so that it is compatible with our movement methods). Thus we place the user on a straight path in a forest. The forest helps induce
+							simulator sickness as the density of trees on the sides of the path increase peripheral vision activity. This in turn helps induce vection.
+							We use low-poly textures to ensure that the frame rate is constantly higher than 90fps, as we want to limit the amount of application design
+							factors that affect simulator sickness.
+					</p>
+						
+					<p>
+							Our main measure for simulator sickness is the Simulator Sickness
+							Questionnaire (SSQ) developed by Kennedy et al. [13]. Each subject
+							took a baseline SSQ and then a further 6 - one before and after
+							each movement method. A subject took 2 SSQs instead of 1 before
+							the controller as they would play through an acclimatisation game
+							after their baseline SSQ and thus we had to ensure that the acclimatisation game did not affect our controllers SSQ scores.
+					</p>
+
+					<p>
+							We were also interested in the correlation between our SSQ scores and the relevant physiological indicators that were found to correlate with
+							simualtor sickness. The physiological measures we assessed are heart rate, respiratory rate, and skin conductance level (SCL).
+							These measures were recorded with a Biopac measurement device.
+					</p>
+
+					<p>
+							We performed a single factor repeated measures experiment with
+							the factor being the type of movement method. Subjects used each
+							method on a different day and the order of the methods were fixed:
+							a subject always used the controller, then the tether, and lastly the
+							stepper.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="latest-articles has-padding alternate-bg" id="results">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-4">
+					<h4>Results</h4>
+				</div>
+				<div class="col-md-8 col-sm-8 sort">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<article class="article-post">
+						<a href="#">
+							<div class="article-image" style="background-image: url(img/graphs/PostSSQ_baw.png)">
+							</div>
+							<figure>
+								<figcaption>
+									<h2>Post Experiment SSQ Mean Scores</h2>
+									<p>No statistical significant difference was found between the controller and the tether. A significant difference was
+										found between the controller and stepper, and tether and stepper.
+									</p>
+								</figcaption>
+							</figure>
+						</a>
+					</article>
+				</div>
+				<div class="col-md-4">
+					<article class="article-post">
+						<a href="#">
+							<div class="article-image" style="background-image: url(img/graphs/SSQDelta_baw.png)">
+							</div>
+							<figure>
+								<figcaption>
+									<h2>Mean Change in SSQ Scores</h2>
+									<p>No statistical significant difference was found between the controller and the tether. A significant difference was
+										found between the controller and stepper, and tether and stepper.
+									</p>
+								</figcaption>
+							</figure>
+						</a>
+					</article>
+				</div>
+				<div class="col-md-4">
+					<article class="article-post">
+						<a href="#">
+							<div class="article-image" style="background-image: url(img/graphs/SUS_mean.png)">
+							</div>
+							<figure>
+								<figcaption>
+									<h2>Mean Usability Scores</h2>
+									<p>No statistical significant difference was found between the controller and the tether. A significant difference was
+										found between the controller and stepper, and tether and stepper.
+									</p>
+								</figcaption>
+							</figure>
+						</a>
+					</article>
+				</div>
+			<div class="row has-top-margin">
+				<div class="col-md-4">
+					<article class="article-post">
+						<a href="#">
+							<div class="article-image" style="background-image: url(img/graphs/HR_mean.png)">
+							</div>
+							<figure>
+								<figcaption>
+									<h2>Mean Heart Rate</h2>
+									<p>No statistical significant difference was found between the controller and the tether. A significant difference was
+										found between the controller and stepper, and tether and stepper.
+									</p>
+								</figcaption>
+							</figure>
+						</a>
+					</article>
+				</div>
+				<div class="col-md-4">
+					<article class="article-post">
+						<a href="#">
+							<div class="article-image" style="background-image: url(img/graphs/RR_mean.png)">
+							</div>
+							<figure>
+								<figcaption>
+									<h2>Mean Respiratory Rate</h2>
+									<p>No statistical significant difference was found between the controller and the tether. A significant difference was
+										found between the controller and stepper, and tether and stepper.
+									</p>
+								</figcaption>
+							</figure>
+						</a>
+					</article>
+				</div>
+				<div class="col-md-4">
+					<article class="article-post">
+						<a href="#">
+							<div class="article-image" style="background-image: url(img/graphs/SCL_mean.png)">
+							</div>
+							<figure>
+								<figcaption>
+									<h2>Mean SCL</h2>
+									<p>A statistical significant difference was found between the controller and the tether, controller and stepper, and tether and stepper.
+									</p>
+								</figcaption>
+							</figure>
+						</a>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="collective has-padding" id="conclusion">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3">
-						<h4>The Experiment</h4>
+						<h4>Conclusions</h4>
 					</div>
 					<div class="col-md-9">
-						<p>
-							Here we talk about the experiment
+						<p>This paper found that the stepper did not reduce simulator sickness in VR but rather increased it. This is likely due to the extra
+								effort required to use the stepper and due to the instability subject
+								experienced. This paper also found that the tether does not provide
+								any additional benefit nor disadvantage when compared to the
+								controller.
 						</p>
 							
-						<p>
-							Blah blah blah
+						<p> Ideas for potential future work involve the use of variable tensile
+								strength for the tether, the use of two tethers for two-dimensional
+								movement. We do not recommend the use of a stepper for future
+								experiments as the physical effort required by the user ultimately
+								detracts from any possible benefit.
 						</p>
 					</div>
 				</div>
@@ -224,21 +381,19 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h4>The Crew</h4>
+					<h4>The Team</h4>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					<article class="crew-member" style="background-image: url(img/crew-peter-finlan.jpg)">
+					<article class="crew-member" style="background-image: url(img/mikhailPic.jpg)">
 						<figure>
 							<figcaption class="overlay">
-								<h2>Peter Finlan</h2>
-								<p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.</p>
+								<h2>Mikhail Amod</h2>
+								<p>Developed the stepper and helped with environment.</p>
 								<div class="crew-socials">
 									<ul>
-										<li><a href="#"><i class="fa fa-twitter"></i></a>
-										</li>
-										<li><a href="#"><i class="fa fa-linkedin"></i></a>
+										<li><a href="https://www.linkedin.com/in/mikhail-amod/"><i class="fa fa-linkedin"></i></a>
 										</li>
 									</ul>
 								</div>
@@ -301,375 +456,32 @@
 					</article>
 				</div>
 			</div>
-			<div class="row skillset">
-				<div class="col-md-6">
-					<div class="bar-chart-wrapper">
-						<h5 class="bar-chart-text">Experience Design <span class="push-right">90%</span></h5>
-						<div class="bar-wrapper">
-							<div class="bar" data-percentage="90%">
-								<span></span>
-							</div>
-						</div>
-					</div>
-					<div class="bar-chart-wrapper">
-						<h5 class="bar-chart-text">HTML5/CSS3 <span class="push-right">95%</span></h5>
-						<div class="bar-wrapper">
-							<div class="bar" data-percentage="95%">
-								<span></span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="bar-chart-wrapper">
-						<h5 class="bar-chart-text">Interactive Prototyping <span class="push-right">80%</span></h5>
-						<div class="bar-wrapper">
-							<div class="bar" data-percentage="80%">
-								<span></span>
-							</div>
-						</div>
-					</div>
-					<div class="bar-chart-wrapper">
-						<h5 class="bar-chart-text">Visual Design <span class="push-right">90%</span></h5>
-						<div class="bar-wrapper">
-							<div class="bar" data-percentage="90%">
-								<span></span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
 		</div>
 	</section>
 	<!-- END SECTION: Crew -->
-	<!-- SECTION: Stats -->
-	<div class="stats has-padding-tall">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 col-sm-4 stats-container">
-					<i class="icon icon-Cup"></i>
-					<div class="stats-wrapper">
-						<p class="stats-number" data-stop="24">24</p>
-						<p class="stats-text">Awards won</p>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-4 stats-container">
-					<i class="icon icon-Book"></i>
-					<div class="stats-wrapper">
-						<p class="stats-number" data-stop="341">341</p>
-						<p class="stats-text">Articles</p>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-4 stats-container">
-					<i class="icon icon-Pen"></i>
-					<div class="stats-wrapper">
-						<p class="stats-number" data-stop="43">43</p>
-						<p class="stats-text">Freebies</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- END SECTION: Stats -->
-	<!-- SECTION: Articles -->
-	<section class="latest-articles has-padding alternate-bg" id="articles">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 col-sm-4">
-					<h4>Latest Articles</h4>
-				</div>
-				<div class="col-md-8 col-sm-8 sort">
-					<h5>Sort by</h5>
-					<select name="article-sort" id="inputArticle-Sort" class="">
-						<option value="">Experience Design</option>
-						<option value="">Visual Design</option>
-						<option value="">UI Patterns</option>
-						<option value="">Product Design</option>
-					</select>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<article class="article-post">
-						<a href="#">
-							<div class="article-image has-overlay" style="background-image: url(img/article-01.jpg)">
-								<span class="featured-tag">Featured</span>
-							</div>
-							<figure>
-								<figcaption>
-									<h2>8 solid tips when working with front-end developers</h2>
-									<p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
-								</figcaption>
-							</figure>
-						</a>
-						<ul class="article-footer">
-							<li class="article-category">
-								<a href="#">Product</a>
-							</li>
-							<li class="article-comments">
-								<span><i class="fa fa-comments"></i> 51</span>
-							</li>
-						</ul>
-					</article>
-				</div>
-				<div class="col-md-4">
-					<article class="article-post">
-						<a href="#">
-							<div class="article-image has-overlay" style="background-image: url(img/article-02.jpg)">
-							</div>
-							<figure>
-								<figcaption>
-									<h2>The 10 best traits of a awesome design leaders</h2>
-									<p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
-								</figcaption>
-							</figure>
-						</a>
-						<ul class="article-footer">
-							<li class="article-category">
-								<a href="#">Teams</a>
-							</li>
-							<li class="article-comments">
-								<span><i class="fa fa-comments"></i> 42</span>
-							</li>
-						</ul>
-					</article>
-				</div>
-				<div class="col-md-4">
-					<article class="article-post">
-						<a href="#">
-							<div class="article-image has-overlay" style="background-image: url(img/article-03.jpg)">
-							</div>
-							<figure>
-								<figcaption>
-									<h2>How to design well collaboratively with an agile product team</h2>
-									<p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
-								</figcaption>
-							</figure>
-						</a>
-						<ul class="article-footer">
-							<li class="article-category">
-								<a href="#">Teams</a>
-							</li>
-							<li class="article-comments">
-								<span><i class="fa fa-comments"></i> 58</span>
-							</li>
-						</ul>
-					</article>
-				</div>
-			</div>
-			<div class="row has-top-margin">
-				<div class="col-md-4">
-					<article class="article-post">
-						<a href="#">
-							<div class="article-image has-overlay" style="background-image: url(img/article-04.jpg)">
-							</div>
-							<figure>
-								<figcaption>
-									<h2>The essentials of modern interaction design (mobile + tablet)</h2>
-									<p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
-								</figcaption>
-							</figure>
-						</a>
-						<ul class="article-footer">
-							<li class="article-category">
-								<a href="#">UX Design</a>
-							</li>
-							<li class="article-comments">
-								<span><i class="fa fa-comments"></i> 14</span>
-							</li>
-						</ul>
-					</article>
-				</div>
-				<div class="col-md-4">
-					<article class="article-post">
-						<a href="#">
-							<div class="article-image has-overlay" style="background-image: url(img/article-05.jpg)">
-							</div>
-							<figure>
-								<figcaption>
-									<h2>Overcoming barriers encountered in the pitch process (part 1)</h2>
-									<p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
-								</figcaption>
-							</figure>
-						</a>
-						<ul class="article-footer">
-							<li class="article-category">
-								<a href="#">Product</a>
-							</li>
-							<li class="article-comments">
-								<span><i class="fa fa-comments"></i> 55</span>
-							</li>
-						</ul>
-					</article>
-				</div>
-				<div class="col-md-4">
-					<article class="article-post">
-						<a href="#">
-							<div class="article-image has-overlay" style="background-image: url(img/article-06.jpg)">
-							</div>
-							<figure>
-								<figcaption>
-									<h2>10 things we've learnt about our users (Case Study)</h2>
-									<p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
-								</figcaption>
-							</figure>
-						</a>
-						<ul class="article-footer">
-							<li class="article-category">
-								<a href="#">UX Design</a>
-							</li>
-							<li class="article-comments">
-								<span><i class="fa fa-comments"></i> 20</span>
-							</li>
-						</ul>
-					</article>
-				</div>
-			</div>
-			<div class="row is-centered">
-				<a href="#intro" class="btn secondary view-more">View more</a>
-			</div>
-		</div>
-	</section>
-	<!-- END SECTION: Articles -->
-	<!-- SECTION: Freebies -->
-	<section class="freebies has-padding" id="freebies">
-		<div class="container freebies-intro">
-			<div class="row">
-				<div class="col-md-12">
-					<h4>Freshest Freebies</h4>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 content-left">
-					<p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem. Tellus nam ad fermentum ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque integer suspendisse a mus integer elit.</p>
-				</div>
-				<div class="col-md-6 content-right">
-					<p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem. Tellus nam ad fermentum ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque integer suspendisse a mus integer elit.</p>
-				</div>
-			</div>
-		</div>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-6 no-padding">
-					<article class="item wp5">
-						<figure class="has-overlay">
-							<figcaption class="overlay">
-								<div class="like-share-wrapper">
-									<ul>
-										<li>
-											<div class="like-button-wrapper">
-												<a href="#" class="like_button"><i class="like-counter fa fa-heart-o"></i></a>
-												<span class="count">0</span>
-											</div>
-										</li>
-									</ul>
-								</div>
-								<div class="freebie-content">
-									<span class="date">03/01/2016</span>
-									<h2>Sedna HTML CSS Template</h2>
-									<div class="group">
-										<a href="http://tympanus.net/codrops/2015/08/11/freebie-sedna-one-page-website-template/" class="btn secondary">Download</a>
-									</div>
-								</div>
-							</figcaption>
-							<img src="img/sedna-freebie.jpg" alt="Sedna Freebie">
-						</figure>
-					</article>
-				</div>
-				<div class="col-md-6 no-padding">
-					<article class="item wp6">
-						<figure class="has-overlay">
-							<figcaption class="overlay">
-								<div class="like-share-wrapper">
-									<ul>
-										<li>
-											<div class="like-button-wrapper">
-												<a href="#" class="like_button"><i class="like-counter fa fa-heart-o"></i></a>
-												<span class="count">0</span>
-											</div>
-										</li>
-									</ul>
-								</div>
-								<div class="freebie-content">
-									<span class="date">03/01/2016</span>
-									<h2>Land.io Sketch Template</h2>
-									<div class="group">
-										<a href="http://tympanus.net/codrops/2015/09/16/freebie-land-io-ui-kit-landing-page-design-sketch/" class="btn secondary">Download</a>
-									</div>
-								</div>
-							</figcaption>
-							<img src="img/landio-freebie.jpg" alt="Land.io Freebie">
-						</figure>
-					</article>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 no-padding">
-					<article class="item wp7">
-						<figure class="has-overlay">
-							<figcaption class="overlay">
-								<div class="like-share-wrapper">
-									<ul>
-										<li>
-											<div class="like-button-wrapper">
-												<a href="#" class="like_button"><i class="like-counter fa fa-heart-o"></i></a>
-												<span class="count">0</span>
-											</div>
-										</li>
-									</ul>
-								</div>
-								<div class="freebie-content">
-									<span class="date">03/01/2016</span>
-									<h2>Synthetica HTML5/CSS3 Template</h2>
-									<div class="group">
-										<a href="http://tympanus.net/codrops/?p=26570" class="btn secondary">Download</a>
-									</div>
-								</div>
-							</figcaption>
-							<img src="img/freebie-03.jpg" alt="Synthetica Freebie">
-						</figure>
-					</article>
-				</div>
-				<div class="col-md-6 no-padding">
-					<article class="item wp8">
-						<figure class="has-overlay">
-							<figcaption class="overlay">
-								<div class="like-share-wrapper">
-									<ul>
-										<li>
-											<div class="like-button-wrapper">
-												<a href="#" class="like_button"><i class="like-counter fa fa-heart-o"></i></a>
-												<span class="count">0</span>
-											</div>
-										</li>
-									</ul>
-								</div>
-								<div class="freebie-content">
-									<span class="date">03/01/2016</span>
-									<h2>Free logo concepts by Koby West</h2>
-									<div class="group">
-										<a href="#" class="btn secondary">Download</a>
-									</div>
-								</div>
-							</figcaption>
-							<img src="img/freebie-04.jpg" alt="Synthetica">
-						</figure>
-					</article>
-				</div>
-				<div class="is-centered">
-					<a href="#" class="btn secondary view-more">View more</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- END SECTION: Freebies -->
 	<!-- SECTION: Get started -->
 	<section class="get-started has-padding text-center" id="get-started">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 wp4">
-					<h2>Get started now. Download Synthetica <a href="http://tympanus.net/codrops/?p=26570">FREE</a>, via Codrops.</h2>
-					<a href="http://tympanus.net/codrops/?p=26570" class="btn secondary-white">Get started</a>
+					<h2>Final Papers</h2>
+					<a href="docs/AMDMIK002_Final.pdf" class="btn secondary-white">Mikhail's</a>
+					<a href="http://tympanus.net/codrops/?p=26570" class="btn secondary-white">Jethro's</a>
+					<a href="docs/GWRBRA001 VRMOVE FINAL REPORT.pdf" class="btn secondary-white">Brandon's</a>
+				</div>
+			</div>
+			<div class="row has-top-margin">
+				<div class="col-md-12 wp4">
+					<h2>Literature Reviews</h2>
+					<a href="docs/LitReview_AMDMIK002.pdf" class="btn secondary-white">Mikhail's</a>
+					<a href="http://tympanus.net/codrops/?p=26570" class="btn secondary-white">Jethro's</a>
+					<a href="docs/Brandon Lit Review.pdf" class="btn secondary-white">Brandon's</a>
+				</div>
+			</div>
+			<div class="row has-top-margin">
+				<div class="col-md-12 wp4">
+					<h2>Project Proposal</h2>
+					<a href="docs/VRMove_ProjectProposal.pdf" class="btn secondary-white">Download</a>
 				</div>
 			</div>
 		</div>
@@ -681,31 +493,17 @@
 			<div class="row">
 				<div class="col-md-4 footer-branding">
 					<img class="footer-branding-logo" src="img/synthetica-logo.png" alt="Synthetica freebie html5 css3 template logo">
-					<p>A free website template created exclusively for <a href="http://tympanus.net/codrops/"><em>Codrops</em></a></p>
+					<p>Website made with Synthetica template. A free website template created exclusively for <a href="http://tympanus.net/codrops/"><em>Codrops</em></a></p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-12 footer-nav">
 					<ul class="footer-primary-nav">
-						<li><a href="#intro">The Collective</a></li>
-						<li><a href="#team">The Crew</a></li>
-						<li><a href="#articles">Articles</a></li>
-						<li><a href="#freebies">Freebies</a></li>
-						<li><a href="#">Subscribe</a></li>
-					</ul>
-					<ul class="footer-share">
-						<li><a href="http://tympanus.net/codrops/licensing/">Licence</a></li>
-						<li><a href="#" class="share-trigger"><i class="fa fa-share"></i>Share</a></li>
-					</ul>
-					<div class="share-dropdown">
-						<ul>
-							<li><a href="#" class="share-twitter"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#" class="share-facebook"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#" class="share-linkedin"><i class="fa fa-linkedin"></i></a></li>
-						</ul>
-					</div>
-					<ul class="footer-secondary-nav">
-						<li><p>A free website template created exclusively for <a href="http://tympanus.net/codrops/"><em>Codrops</em></a></p></li>
+							<li><a href="#intro">Introduction</a></li>
+							<li><a href="#experiment">The Experiment</a></li>
+							<li><a href="#results">Results</a></li>
+							<li><a href="#conclusion">Conclusions</a></li>
+							<li><a href="#team">The Team</a></li>
 					</ul>
 				</div>
 			</div>
